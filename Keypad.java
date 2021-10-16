@@ -15,8 +15,6 @@ public class Keypad {
 				ans[k] = smallAns[i] + str[j];
 				k++;
 			}
-			
-			
 		}
 		return ans;
 	}
@@ -25,8 +23,7 @@ public class Keypad {
 		while(n != 0) {
 			if (n % 10 == 0) {
 				Invalid_Input e = new  Invalid_Input();
-				throw e;
-				
+				throw e;	
 			}
 			n /= 10;
 		}
@@ -66,18 +63,13 @@ public class Keypad {
 			return arr;
 		}
 		char arr[] = {};
-		return arr;
-		
+		return arr;	
 	}
-
 	public static void main(String[] args)throws Invalid_Input {
-		// TODO Auto-generated method stub
 		Scanner sc  = new Scanner(System.in);
 		int n = sc.nextInt();
 		String arr[] = keypad(n);
 		for (int i = 0; i < arr.length; i++)
 			System.out.println(arr[i]);
-
 	}
-
 }
