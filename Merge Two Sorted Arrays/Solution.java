@@ -10,7 +10,7 @@ public class Solution {
 
         int C[] = new int[A.length + B.length];
 
-        int i = 0; int j = 0; int k = 0;
+        int i = 0, j = 0, k = 0;
 
         while(i< A.length && j < B.length) {
             if (A[i] < B[j]) {
@@ -28,5 +28,26 @@ public class Solution {
             C[k++] = B[j++];
 
         return C;
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n1,n2,n3,i;
+        System.out.println("enter 1st array size and 2nd array size");
+        n1=sc.nextInt();
+        n2=sc.nextInt();
+        n3=n1+n3;
+        int a[]=new int[n1];
+        int b[]=new int[n2];
+        for(i=0;i<n1;i++)
+            a[i]=sc.nextInt();
+        for(i=0;i<n2;i++)
+            b[i]=sc.nextInt();
+        int c[]=new int[n3];
+        c=mergeSortedArray(a,b);
+        for(i=0;i<n3;i++)
+            System.out.print(c[i]);
+        
+        
     }
 }
