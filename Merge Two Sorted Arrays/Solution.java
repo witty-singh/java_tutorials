@@ -5,20 +5,19 @@ public class Solution {
      * @return: A new sorted integer array
      */
     public int[] mergeSortedArray(int[] A, int[] B) {
-        if (A == null || B == null)
+        if (B == null || A == null)
             return null;
 
         int C[] = new int[A.length + B.length];
 
-        int i = 0; int j = 0; int k = 0;
+        int j = 0; int k = 0; int i = 0;
 
         while(i< A.length && j < B.length) {
             if (A[i] < B[j]) {
                 C[k++] = A[i++];
             }
-            else {
+            else 
                 C[k++] = B[j++];
-            }
         }
 
         while(i < A.length)
