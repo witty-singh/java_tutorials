@@ -4,8 +4,9 @@ public class Temp {
 	
 
 	public static void main(String[] args) {
-		String arr[] = {};
-	    System.out.print(arr.length);
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+	    System.out.print("length of string is "+str.length);
 		
 		
     }	
